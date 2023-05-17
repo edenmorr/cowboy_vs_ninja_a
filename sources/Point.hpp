@@ -12,7 +12,7 @@ double x;
 double y;
  
 public:
-Point();
+// Point();
 Point(double xcoord, double ycoord);
 double getX() const;
 double getY() const;

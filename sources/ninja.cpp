@@ -1,4 +1,4 @@
-#include "Ninja.hpp"
+#include "ninja.hpp"
 #include <iostream>
 #include <string>
 #include "Character.hpp"

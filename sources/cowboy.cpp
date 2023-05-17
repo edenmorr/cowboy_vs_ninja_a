@@ -6,27 +6,28 @@
 #include "Point.hpp"
 #include <cmath>
 #include <string>
-#include "cowboy.hpp"
+#include "Cowboy.hpp"
 #include "Character.hpp"
+
 namespace ariel{ 
-cowboy::cowboy(string name ,Point location):bullets(6), damage(10) {}
+Cowboy::Cowboy(string name,Point location):Character(location,110,name),bullets(6){}
 
 
-void cowboy::shoot(Character* enemy) {
-    // Check if the cowboy is alive and has bullets remaining
+void Cowboy::shoot(Character* enemy) {
+    // Check if the Cowboy is alive and has bullets remaining
     // If so, shoot the enemy, subtract 10 from the enemy's health, and decrease the bullet count by 1
     // Implementation omitted for brevity
 }
 
-bool cowboy::hasBullets() const {
+bool Cowboy::hasBullets() const {
     return bullets > 0;
 }
 
-void cowboy::reload() {
+void Cowboy::reload() {
     bullets = 6;
 }
-string cowboy::print(){
-    
+string Cowboy::print(){
+    string print;
+    return print;
 }
-
 }

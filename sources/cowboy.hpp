@@ -8,18 +8,17 @@
 #include <cmath>
 #include <string>
 namespace ariel{ 
-class cowboy {
-
+class Cowboy:public Character
+    {
 protected:
     int bullets;
     int damage;
 
 public:
-    cowboy(string name ,Point location);
+    Cowboy(string name ,Point location);
     void shoot(Character* enemy);
     bool hasBullets() const;
     void reload();
- 
-    string print();
+    string print() override;
 };
 }
