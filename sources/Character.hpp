@@ -12,11 +12,11 @@ class Character{
 
 private:
 Point location;
-int Point_of_impact;
 string name;
 
 
 public:
+int Point_of_impact;
 bool isAlive();
 Character(const std::string& name, int Point_of_impact, const Point& location);
 double distance(const Character& other) const;

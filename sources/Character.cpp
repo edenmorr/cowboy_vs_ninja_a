@@ -11,8 +11,8 @@
 using namespace std;
 namespace ariel{ 
 
-Character::Character(const string& name, int hitPoints, const Point& location)
-    : name(name), Point_of_impact(hitPoints), location(location) {}
+Character::Character(const string& name, int Point_of_impact, const Point& location)
+    : name(name), Point_of_impact(Point_of_impact), location(location) {}
 
 bool Character::isAlive() {
     return Point_of_impact > 0;
