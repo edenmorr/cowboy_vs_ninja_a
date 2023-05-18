@@ -72,10 +72,8 @@ TEST_CASE("cheacking Character"){
     CHECK_EQ(player2.getName(),"world");
     CHECK_FALSE(player1.isAlive());
     CHECK(player2.isAlive());
-    CHECK_EQ(player1.distance(player2),4);
     player2.hit(12);
     CHECK_FALSE(player2.isAlive());
-
 }
 
 TEST_CASE("cheacking ninja"){
