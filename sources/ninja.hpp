@@ -1,4 +1,5 @@
 #include "Character.hpp"
+#pragma once
 
 namespace ariel{
 class ninja:public Character

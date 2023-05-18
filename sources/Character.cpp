@@ -3,16 +3,15 @@
 #include <sstream>
 #include <stdexcept>
 #include <cassert>
-#include "Point.hpp"
 #include "Character.hpp"
 #include <cmath>
 #include <string>
 
 using namespace std;
 namespace ariel{ 
-
-Character::Character(const string& name, int Point_of_impact, const Point& location)
-    : name(name), Point_of_impact(Point_of_impact), location(location) {}
+Character::Character(Point location, int Point_of_impact, string name)
+    : location(location), Point_of_impact(Point_of_impact), name(name) {}
+   
 
 bool Character::isAlive() {
     return Point_of_impact > 0;

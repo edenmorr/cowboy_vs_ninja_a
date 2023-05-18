@@ -3,20 +3,25 @@
 #include "ninja.hpp"
 #include "Point.hpp"
 #include <vector>
+#pragma once
+
 namespace ariel{
 class TeamR
 {
 private:
 vector<Character*> members;
 Character* leader;
-public:
 
+public:
+TeamR();
 TeamR(Character* leader);
 void add(Character* NewMember);
 int stillAlive();
 virtual void attack(TeamR* team) = 0;
 void print();
-
+int size(){
+    return 0;
+}
 vector<Character*> GetMembers();
 
 Character* Getleader();

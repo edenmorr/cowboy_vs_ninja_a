@@ -3,6 +3,8 @@
 #include <sstream>
 #include <stdexcept>
 #include <cassert>
+#pragma once
+
 using namespace std;
 namespace ariel{
 class Point{

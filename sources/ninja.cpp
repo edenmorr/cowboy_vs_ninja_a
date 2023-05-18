@@ -6,16 +6,13 @@
 using namespace std;
 namespace ariel
 {
-    ninja::ninja(Point location,string name,int life,int speed):Character(name,Point_of_impact,location),speed(speed){}
+    ninja::ninja(Point location,string name,int life,int speed):Character(location,life,name),speed(speed){}
 
-
-    void move(Character* enemy)
-    {
-    }
+  
     void ninja::slash(Character* enemy)
     {
     }
-    void ninja::move(Character *enemy)
+    void ninja::move(Character* enemy)
     {
     }
     int ninja::getSpeed()
@@ -28,7 +25,11 @@ namespace ariel
     }
     string ninja::print()
     {
-    
+     string print = "";
+        print +=this-> name + ": is a Ninja\n";
+        print += "life left: " + to_string(Point_of_impact);
+        // print += "\nlocation: "+ to_string(location) + "\n";
+        return print;
     }
 
     //OldNinja constructor
